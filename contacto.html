@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto - Isla Blanca</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#f4f1ea;
+}
+header{
+  background:#0e3b4f;
+  color:white;
+  padding:20px;
+  text-align:center;
+  font-size:26px;
+  font-weight:bold;
+}
+.container{
+  max-width:900px;
+  margin:0 auto;
+  padding:30px 18px;
+}
+.card{
+  background:white;
+  border-radius:14px;
+  padding:22px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.12);
+  margin-bottom:18px;
+}
+h2{ margin:0 0 10px 0; }
+.actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:14px;
+}
+.btn{
+  display:inline-block;
+  padding:14px 18px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+  background:#0e3b4f;
+  color:white;
+}
+.btn.secondary{
+  background:#1f6f5b;
+}
+.small{
+  color:#333;
+  opacity:0.85;
+  margin-top:8px;
+}
+iframe{
+  width:100%;
+  height:360px;
+  border:0;
+  border-radius:12px;
+}
+a.back{
+  display:inline-block;
+  margin-top:18px;
+  text-decoration:none;
+  color:#0e3b4f;
+  font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+<header>Contacto - Isla Blanca</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>Reservas</h2>
+    <div class="small">Teléfono</div>
+    <div style="font-size:20px; font-weight:bold; margin-top:6px;">603 032 677</div>
+
+    <div class="actions">
+      <a class="btn" href="tel:+34603032677">📞 Llamar</a>
+      <a class="btn secondary" href="https://wa.me/34603032677" target="_blank" rel="noopener">💬 WhatsApp</a>
+      <a class="btn" href="index.html">🏠 Inicio</a>
+    </div>
+
+    <div class="small">
+      Consejo: pon un QR en mesas que apunte a esta página para que reserven rápido.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Cómo llegar</h2>
+    <div class="small">Paseo Mediterráneo B2 - Playa Las Ventanicas</div>
+
+    <!-- MAPA: si quieres, luego lo cambiamos al enlace exacto de Google Maps de tu local -->
+    <iframe
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=Paseo%20Mediterr%C3%A1neo%20B2%20Playa%20Las%20Ventanicas&output=embed">
+    </iframe>
+
+    <div class="actions">
+      <a class="btn" target="_blank" rel="noopener"
+         href="https://www.google.com/maps/search/?api=1&query=Paseo%20Mediterr%C3%A1neo%20B2%20Playa%20Las%20Ventanicas">
+        🧭 Abrir en Google Maps
+      </a>
+    </div>
+  </div>
+
+  <a class="back" href="index.html">← Volver</a>
+</div>
+
+</body>
+</html>
