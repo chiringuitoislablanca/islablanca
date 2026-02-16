@@ -69,14 +69,28 @@ header{
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    background:rgba(14,59,79,0.9);
+    background:rgba(14,59,79,0.92);
     color:white;
     padding:16px 28px;
-    border-radius:8px;
+    border-radius:10px;
     text-decoration:none;
     font-size:20px;
     font-weight:bold;
+    transition:all 0.25s ease;
 }
+
+/* al pasar el dedo o ratón */
+.card:hover a{
+    background:#0e3b4f;
+    transform:translate(-50%,-50%) scale(1.08);
+    box-shadow:0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* efecto pulsar */
+.card a:active{
+    transform:translate(-50%,-50%) scale(0.95);
+}
+
 </style>
 
 </head>
