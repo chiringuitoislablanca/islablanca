@@ -60,6 +60,43 @@ nav a{
 </style>
 
 </head>
+.cards{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.card{
+    width:320px;
+    height:200px;
+    border-radius:14px;
+    overflow:hidden;
+    position:relative;
+    box-shadow:0 10px 30px rgba(0,0,0,0.35);
+}
+
+.card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(70%);
+}
+
+.card a{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:rgba(14,59,79,0.9);
+    color:white;
+    padding:16px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+}
 
 <body>
 
@@ -76,12 +113,26 @@ ISLA BLANCA
 <div class="hero"></div>
 
 <div class="contenido">
-<h2>Bienvenido a Isla Blanca</h2>
-<p>Disfruta de nuestra cocina mediterránea frente al mar, con productos frescos y el auténtico ambiente de playa.</p>
 
-<a class="boton" href="carta-restaurante.html">Ver carta</a>
+<h2>Bienvenido a Isla Blanca</h2>
+<p>Elige dónde quieres disfrutar tu experiencia</p>
+
+<div class="cards">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de">
+        <a href="carta-restaurante.html">RESTAURANTE</a>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+        <a href="carta-chiringuito.html">CHIRINGUITO</a>
+    </div>
 
 </div>
+
+</div>
+
 
 </body>
 </html>
